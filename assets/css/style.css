@@ -1,6 +1,46 @@
 *{
     text-decoration: none
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.modalContent {
+    background-color: red;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name:modalopen;
+    animation-duration: 1s;
+}
+
+.closeBtn {
+    color: white;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, c.closeBtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
 body {
     margin: 0;
     font-family: 'Stylish', sans-serif;
@@ -169,6 +209,16 @@ content li:hover {
     margin-right: 28px;
 }
 
+.contact {
+    font-family: 'Stylish', sans-serif;
+	font-size: 18px;
+	padding-top: 5px;
+	color: #f8f8f8;
+    font-weight: bold;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
 form {
     font-family: 'Stylish', sans-serif;
 	margin-left: 25px;
@@ -239,7 +289,10 @@ form {
 
 	*{
 		text-decoration: none
-	}
+    }
+    .code {
+        margin: 0;
+    }
 	body {
 		margin: 0;
         font-family: 'Stylish', sans-serif;
@@ -408,7 +461,17 @@ form {
 		border-bottom: ridge 5px #900808;
 		margin-left: 28px;
 		margin-right: 28px;
-	}
+    }
+    
+    .contact {
+        font-family: 'Stylish', sans-serif;
+        font-size: 18px;
+        padding-top: 5px;
+        color: #f8f8f8;
+        font-weight: bold;
+        margin-left: 28px;
+        margin-right: 28px;
+    }
 	
 	form {
         font-family: 'Stylish', sans-serif;
@@ -634,7 +697,17 @@ form {
 		bottom: 53px;
 		text-decoration: none;
 		clear: left
-	}
+    }
+    
+    .contact {
+        font-family: 'Stylish', sans-serif;
+        font-size: 18px;
+        padding-top: 5px;
+        color: #f8f8f8;
+        font-weight: bold;
+        margin-left: 28px;
+        margin-right: 28px;
+    }
 
 	.main {
         font-family: 'Stylish', sans-serif;
@@ -723,7 +796,7 @@ form {
 		margin: 0;
         font-family: 'Stylish', sans-serif;
 		font-size: 18px;
-		background-image: url("../images/background.png")
+		background-image: url("../images/background.jpg")
 	}
 	
 	.container {
@@ -888,7 +961,17 @@ form {
 		border-bottom: ridge 5px #900808;
 		margin-left: 28px;
 		margin-right: 28px;
-	}
+    }
+    
+    .contact {
+        font-family: 'Stylish', sans-serif;
+        font-size: 18px;
+        padding-top: 5px;
+        color: #f8f8f8;
+        font-weight: bold;
+        margin-left: 28px;
+        margin-right: 28px;
+    }
 	
 	form {
         font-family: 'Stylish', sans-serif;
