@@ -1,31 +1,95 @@
-// Get the modal element
-var modal = document.getElementById('codeSelect');
-// Get open modal button
-var modalBtn = document.getElementById('modalBtn');
+// Get the data modal element
+var dateModal = document.getElementById('dateSelect');
+// Get open date modal button
+var modalDateBtn = document.getElementById('modalDateBtn');
 // Get close button
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 //Listen for open click
-modalBtn1.addEventListener('click', openModal);
+modalDateBtn.addEventListener('click', openDateModal);
 //Listen for close click
-closeBtn.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeDateModal);
 //Listen for outside click
-window.addEventListener('click', clickOutside);
+window.addEventListener('click', clickOutsideDate);
 
 
 //Function to open modal
-function openModal(){
-    modal.style.display = 'block';
+function openDateModal(){
+    dateModal.style.display = 'block';
 }
 
 //Function to close modal
-function closeModal(){
-    modal.style.display = 'none';
+function closeDateModal(){
+    dateModal.style.display = 'none';
 }
 
 //Function to close modal if outside click
-function clickOutside(e){
-    if(e.target == modal){
-    modal.style.display = 'none';
+function clickOutsideDate(e){
+    if(e.target == dateModal){
+    dateModal.style.display = 'none';
+    }
+}
+
+// Get the word modal element
+var wordModal = document.getElementById('wordSelect');
+// Get open word modal button
+var modalWordBtn = document.getElementById('modalWordBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[1];
+
+//Listen for open click
+modalWordBtn.addEventListener('click', openWordModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeWordModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideWord);
+
+
+//Function to open modal
+function openWordModal(){
+    wordModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeWordModal(){
+    wordModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideWord(e){
+    if(e.target == wordModal){
+    wordModal.style.display = 'none';
+    }
+}
+
+// Get the trivia modal element
+var triviaModal = document.getElementById('triviaSelect');
+// Get open trivia modal button
+var modalTriviaBtn = document.getElementById('modalTriviaBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[2];
+
+//Listen for open click
+modalTriviaBtn.addEventListener('click', openTriviaModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeTriviaModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideTrivia);
+
+
+//Function to open modal
+function openTriviaModal(){
+    triviaModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeTriviaModal(){
+    triviaModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideTrivia(e){
+    if(e.target == triviaModal){
+    triviaModal.style.display = 'none';
     }
 }
