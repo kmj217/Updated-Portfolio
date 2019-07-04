@@ -99,7 +99,7 @@ var liriModal = document.getElementById('liriSelect');
 // Get open trivia modal button
 var modalLIRIBtn = document.getElementById('modalLIRIBtn');
 // Get close button
-var closeBtn = document.getElementsByClassName('closeBtn')[2];
+var closeBtn = document.getElementsByClassName('closeBtn')[3];
 
 //Listen for open click
 modalLIRIBtn.addEventListener('click', openLIRIModal);
