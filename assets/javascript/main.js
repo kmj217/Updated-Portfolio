@@ -93,3 +93,35 @@ function clickOutsideTrivia(e){
     triviaModal.style.display = 'none';
     }
 }
+
+// Get the trivia modal element
+var liriModal = document.getElementById('liriSelect');
+// Get open trivia modal button
+var modalLIRIBtn = document.getElementById('modalLIRIBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[2];
+
+//Listen for open click
+modalLIRIBtn.addEventListener('click', openLIRIModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeLIRIModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideLIRI);
+
+
+//Function to open modal
+function openLIRIModal(){
+    liriModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeLIRIModal(){
+    liriModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideLIRI(e){
+    if(e.target == liriModal){
+    liriModal.style.display = 'none';
+    }
+}
