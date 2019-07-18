@@ -125,3 +125,35 @@ function clickOutsideLIRI(e){
     liriModal.style.display = 'none';
     }
 }
+
+// Get the bamazon modal element
+var bamModal = document.getElementById('bamSelect');
+// Get open trivia modal button
+var modalBamBtn = document.getElementById('modalBamBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[4];
+
+//Listen for open click
+modalBamBtn.addEventListener('click', openBamModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeBamModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideBam);
+
+
+//Function to open modal
+function openBamModal(){
+    bamModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeBamModal(){
+    bamModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideBam(e){
+    if(e.target == bamModal){
+    bamModal.style.display = 'none';
+    }
+}
