@@ -157,3 +157,35 @@ function clickOutsideBam(e){
     bamModal.style.display = 'none';
     }
 }
+
+// Get the friend finder modal element
+var finderModal = document.getElementById('finderSelect');
+// Get open friend finder modal button
+var modalFinderBtn = document.getElementById('modalFinderBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[5];
+
+//Listen for open click
+modalFinderBtn.addEventListener('click', openFinderModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeFinderModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideFinder);
+
+
+//Function to open modal
+function openFinderModal(){
+    finderModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeFinderModal(){
+    finderModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideBam(e){
+    if(e.target == finderModal){
+    finderModal.style.display = 'none';
+    }
+}
