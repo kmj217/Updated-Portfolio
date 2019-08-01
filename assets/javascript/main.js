@@ -189,3 +189,35 @@ function clickOutsideBam(e){
     finderModal.style.display = 'none';
     }
 }
+
+// Get the burger modal element
+var burgerModal = document.getElementById('burgerSelect');
+// Get open burger modal button
+var modalBurgerBtn = document.getElementById('modalBurgerBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[6];
+
+//Listen for open click
+modalBurgerBtn.addEventListener('click', openBurgerModal);
+//Listen for close click
+closeBtn.addEventListener('click', closeBurgerModal);
+//Listen for outside click
+window.addEventListener('click', clickOutsideBurger);
+
+
+//Function to open modal
+function openBurgerModal(){
+    burgerModal.style.display = 'block';
+}
+
+//Function to close modal
+function closeBurgerModal(){
+    burgerModal.style.display = 'none';
+}
+
+//Function to close modal if outside click
+function clickOutsideBam(e){
+    if(e.target == burgerModal){
+    burgerModal.style.display = 'none';
+    }
+}
