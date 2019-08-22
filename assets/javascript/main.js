@@ -184,7 +184,7 @@ function closeFinderModal(){
 }
 
 //Function to close modal if outside click
-function clickOutsideBam(e){
+function clickOutsideFinder(e){
     if(e.target == finderModal){
     finderModal.style.display = 'none';
     }
@@ -216,7 +216,7 @@ function closeBurgerModal(){
 }
 
 //Function to close modal if outside click
-function clickOutsideBam(e){
+function clickOutsideBurger(e){
     if(e.target == burgerModal){
     burgerModal.style.display = 'none';
     }
